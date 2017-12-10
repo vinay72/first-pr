@@ -11,15 +11,18 @@ const requestUrls = ["https://api.github.com/repos/mozilla/pdf.js/issues?labels=
    "https://api.github.com/repos/pouchdb/pouchdb/issues?labels=first%20timers%20only",
    "https://api.github.com/repos/avajs/ava/issues?labels=good%20for%20beginner",
    "https://api.github.com/repos/kinto/kinto.js/issues?labels=easy-pick",
+   "https://api.github.com/repos/cypress-io/cypress-documentation/issues?labels=first-timers-only",
    "https://api.github.com/repos/eslint/eslint/issues?labels=beginner",
    "https://api.github.com/repos/emberjs/ember.js/issues?labels=Good%20for%20New%20Contributors",
    "https://api.github.com/repos/FreeCodeCamp/FreeCodeCamp/issues?labels=first-timers-only",
    "https://api.github.com/repos/TryGhost/Ghost/issues?labels=good%20first%20issue",
    "https://api.github.com/repos/moment/moment/issues?labels=Up-For-Grabs",
-   "https://api.github.com/repos/zeit/next.js/issues?labels=good%20first%20issue"
+   "https://api.github.com/repos/zeit/next.js/issues?labels=good%20first%20issue",
+   "https://api.github.com/repos/hoodiehq/camp/issues?labels=first-timers-only",
+   "https://api.github.com/repos/OperationCode/operationcode_frontend/issues?labels=beginner%20friendly",
 ];
 
-export default class App extends React.Component {
+export default class App extends Component {
    constructor(props) {
       super(props)
 
@@ -30,7 +33,6 @@ export default class App extends React.Component {
    }
 
    componentDidMount() {
-      const proxyurl = "https://cors-anywhere.herokuapp.com/";
       const issuesJSON = requestUrls.map(function(url) {
          return axios.get(url)
             .then(res => {

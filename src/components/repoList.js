@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Repo from './repo';
 
 const RepoList = ({ repolist, onRepoSelect }) => {
@@ -17,7 +17,7 @@ const RepoList = ({ repolist, onRepoSelect }) => {
       <div>
          <table>
             <thead>
-               <tr className="row no-hover" valign="middle" style={{ "border-bottom": "1px solid #e1e4e8" }}>
+               <tr className="row no-hover" valign="middle" style={{ "borderBottom": "1px solid #e1e4e8" }}>
                   <th className="col-xs-5">Repository</th>
                   <th className="col-xs-5">Label</th>
                   <th className="col-xs-2" style={ {"fontSize":14} }>Open Issues</th>

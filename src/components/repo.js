@@ -10,14 +10,14 @@ const Repo = ({ repo, onRepoSelect }) => {
    repo.numIssues = repo.data.length;
 
    //get color
-   if (repo.numIssues == 0)
+   if (repo.numIssues === 0)
       repo.labelColor = { "backgroundColor": "#e1e4e8" };
    else {
       const tmp = repo.data[0].labels;
       for (var j = 0; j < tmp.length; j++) {
          const tmpname = tmp[j].name;
-         const color = tmp[j].color == "ffffff" ? "#e1e4e8" : "#" + tmp[j].color;
-         if (tmpname == repo.label) {
+         const color = tmp[j].color === "ffffff" ? "#e1e4e8" : "#" + tmp[j].color;
+         if (tmpname === repo.label) {
             repo.labelColor = { "backgroundColor": color };
             console.log(repo.labelColor);
             break;
