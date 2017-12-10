@@ -19,7 +19,7 @@ const Repo = ({ repo, onRepoSelect }) => {
          const color = tmp[j].color === "ffffff" ? "#e1e4e8" : "#" + tmp[j].color;
          if (tmpname === repo.label) {
             repo.labelColor = { "backgroundColor": color };
-            console.log(repo.labelColor);
+            //console.log(repo.labelColor);
             break;
          }
       }

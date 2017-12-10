@@ -12,7 +12,7 @@ const Issues = ({ selectedRepo }) => {
                <tr key={issue.id} className="row issue-row">
                   <a style={{ "textDecoration": "none", "color": "#24292e" }} href={issue.html_url}>
                      <td> 
-                        <span style={{ "color" : "silver", "font-weight" : "normal"}}>[#{num}]</span> {issue.title}
+                        <span style={{ "color" : "silver", "fontWeight" : "normal"}}>[#{num}]</span> {issue.title}
                         <div className="date">opened {date}</div>
                      </td>
                   </a>

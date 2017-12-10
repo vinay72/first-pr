@@ -42,7 +42,7 @@ export default class App extends Component {
 
 
       Promise.all(issuesJSON).then(results => {
-         console.log(results);
+         //console.log(results);
          this.setState({ repos: results });
       })
    }
