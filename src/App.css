@@ -77,3 +77,12 @@ table {
 .react-container {
    margin-top: 60px;
 }
+
+.contact {
+   background-color: #373a3c;
+   margin: 30px auto;
+}
+
+.contact-info {
+   text-align: center;
+}
